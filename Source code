@@ -19,4 +19,4 @@ while cam.isOpened():
         winsound.PlaySound('enemies_ahead.mp3', winsound.SND_ASYNC)
     if cv2.waitKey(10) == ord('q'):
         break
-    cv2.imshow('Granny Cam', frame1)
+    cv2.imshow('security camera', frame1)
