@@ -17,6 +17,6 @@ while cam.isOpened():
         x, y, w, h = cv2.boundingRect(c)
         cv2.rectangle(frame1, (x, y), (x+w, y+h), (0, 255, 0), 2)
         winsound.PlaySound('enemies_ahead.mp3', winsound.SND_ASYNC)
-    if cv2.waitKey(10) == ord('q'):
+    if cv2.waitKey(12) == ord('q'):
         break
     cv2.imshow('security camera', frame1)
